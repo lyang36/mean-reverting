@@ -354,8 +354,8 @@ class worker(object):
         print("finished")
 
 with tf.Session() as sess:
-    tf.set_random_seed(2)
-    np.random.seed(2)
+    tf.set_random_seed(1)
+    np.random.seed(1)
     model = worker(sess)
     model.read_data()
     model.Solve_ABC()
